@@ -1,0 +1,21 @@
+{
+  "name": "grenache-exchange",
+  "version": "1.0.0",
+  "main": "exchange-node.js",
+  "scripts": {
+    "start:grape": "grape --dp 20001 --aph 30001 --bn '127.0.0.1:20002' & grape --dp 20002 --aph 40001 --bn '127.0.0.1:20001'",
+    "test": "npx mocha test/exchange-node.test.js --exit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "grenache-nodejs-http": "^1.0.1",
+    "grenache-nodejs-link": "^1.0.2"
+  },
+  "devDependencies": {
+    "chai": "^5.2.0",
+    "mocha": "^11.7.0"
+  }
+}
